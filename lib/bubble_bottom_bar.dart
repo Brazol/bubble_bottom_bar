@@ -195,8 +195,8 @@ class _TileIcon extends StatelessWidget {
       child: badges.Badge(
         showBadge: item.showBadge,
         badgeContent: item.badge,
-        badgeColor: item.badgeColor,
-        animationType: badges.BadgeAnimationType.fade,
+        badgeStyle: badges.BadgeStyle(badgeColor: item.badgeColor),
+        badgeAnimation: badges.BadgeAnimation.fade(),
         child: Container(
           child: IconTheme(
             data: IconThemeData(
